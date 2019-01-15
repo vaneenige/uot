@@ -1,6 +1,6 @@
 {
   "name": "uot",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "A tiny 200b timeout alternative with progress.",
   "main": "dist/uot.mjs",
   "unpkg": "dist/uot.umd.js",
