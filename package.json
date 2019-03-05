@@ -1,7 +1,7 @@
 {
   "name": "uot",
-  "version": "1.1.0",
-  "description": "A tiny 200b timeout alternative with progress.",
+  "version": "1.2.0",
+  "description": "A tiny setTimeout alternative with progress.",
   "main": "dist/uot.mjs",
   "unpkg": "dist/uot.umd.js",
   "scripts": {
@@ -25,6 +25,7 @@
   ],
   "keywords": [
     "timeout",
+    "interval",
     "progress"
   ],
   "license": "MIT",
