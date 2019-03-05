@@ -5,11 +5,11 @@
 [![license](https://img.shields.io/npm/l/uot.svg)](https://github.com/vaneenige/uot/blob/master/LICENSE)
 [![dependencies](https://img.shields.io/badge/dependencies-none-ff69b4.svg)](https://github.com/vaneenige/uot/blob/master/package.json)
 
-Update Over Time (uot) is a **200b** library to provide the easiest way for updating values over time. Provide a callback and a duration you're ready to go!
+Update Over Time (uot) is a tiny library to provide the easiest way for updating values over time. Provide a callback and a duration you're ready to go!
 
 This utility can be useful for CSS animations, DOM changes, WebGL transitions or anything that can be updated based on a progress value.
 
->It's basically a setTimeout with progress.
+>It's basically a setTimeout (or setInterval) with progress.
 
 #### Features:
 
@@ -39,6 +39,8 @@ updateOverTime((progress) => {
   }
 }, 2000);
 ```
+
+> As a third parameter an optional repeat count can be provided. 
 
 Use the progress value to update the DOM (or anything):
 ```js

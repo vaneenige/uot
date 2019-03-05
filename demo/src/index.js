@@ -4,11 +4,15 @@ let count = 0;
 document.querySelector('button').addEventListener('click', () => {
   document.querySelector('ul').innerHTML += `<li></li>`;
   let savedCount = count;
-  uot(progress => {
-    progress = easeInOutQuad(progress);
-    document.querySelectorAll('li')[savedCount].textContent = progress.toFixed(2);
-    if (progress === 1) console.log('complete');
-  }, 5000);
+  uot(
+    progress => {
+      progress = easeInOutQuad(progress);
+      document.querySelectorAll('li')[savedCount].textContent = progress.toFixed(2);
+      if (progress === 1) console.log('complete');
+    },
+    5000,
+    count + 1
+  );
   count += 1;
 });
 
