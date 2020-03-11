@@ -18,7 +18,11 @@ function tick() {
 }
 
 function uot(callback, duration, repeat = 1) {
-  observers.push([callback, duration, repeat, p.now()]) > 1 || raf(tick);
+  const len = observers.push([callback, duration, repeat, p.now()]);
+  len > 1 || raf(tick);
+  return function() {
+    observers.splice(len - 1, 1);
+  };
 }
 
 export default uot;
